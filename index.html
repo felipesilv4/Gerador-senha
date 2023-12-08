@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <img src="imagem/Y2k_logo-removebg-preview.png" class="logo">
+    <main class="conainer-input">
+        <span>Tamanho <span id="valor"> </span> Caracteres</span>
+        <input min="5" max="30" id="slider" class="slider" type="range" value="5">
+        <button class="button-cta" id="button" onclick="generatepassword()">Gerar senha</button>
+    </main>
+    <div class="container-password hide" id="conteiner-password">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password" onclick="copypassword()"></span>
+        <span class="tooltip" >Clique na senha para copiar</span>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

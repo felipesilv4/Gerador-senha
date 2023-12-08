@@ -1,0 +1,98 @@
+*{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #18181b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+     margin-top: -60px;/*Usei esse margin-top para pode acerta os elementos na minha tela, pra deixa o elemento mais ao centro em relação ao horizonte(usado apenas para minha tela, podendo variar em outras)  */
+    max-width: 550px;
+   
+}
+.conainer-input{
+    max-width: 480px;
+}
+.conainer-input span{
+    color: white;
+    font-size: 22px;
+}
+.slide{
+    -webkit-appearance: none;
+    background: white;
+    height: 15px;
+    outline: none;
+    border-radius: 6px;
+    /* margin-top: 6px; */
+}
+.button-cta{
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    background: #3eb72b;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+.button-cta:hover{
+    color: #3eb72b;
+    background: white;
+    transform: scale(1.1);
+}
+.container-password{
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.password{
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+.password:hover{
+    transform: scale(1.05);
+}
+.hide{
+    display: none;
+}
+.tooltip{
+    padding: 6px 8px;
+    top: 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
